@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <title>Movie Guesser</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="card bg-light m-5 border-3">
+                <div class="card-body p-5">
+                    <h1 class="card-title text-center mb-5 fw-bold">
+                        Badly explained movies
+                    </h1>
+                    <hr />
+                    <p
+                        id="movie-text"
+                        class="card-text text-center fw-bold fs-5"
+                    >
+                        text
+                    </p>
+                    <hr />
+                    <div class="input-group flex-nowrap">
+                        <input
+                            id="user-guess"
+                            type="text"
+                            class="form-control mb-3 mt-3"
+                            placeholder="Enter guess here"
+                            aria-label="Enter guess here"
+                            aria-describedby="addon-wrapping"
+                        />
+                    </div>
+                    <button
+                        id="submit-btn"
+                        type="button"
+                        class="btn btn-primary w-100 fs-4 mb-2"
+                    >
+                        Submit
+                    </button>
+                    <hr />
+                    <button
+                        id="hint-btn"
+                        type="button"
+                        class="btn btn-secondary w-100 fs-4 mt-2 mb-4"
+                    >
+                        Show Hint
+                    </button>
+                    <div id="success-alert" class="alert alert-success hide">
+                        Success
+                    </div>
+                    <div id="fail-alert" class="alert alert-danger hide">
+                        Try Again
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"
+        ></script>
+        <script src="main.js"></script>
+    </body>
+</html>
